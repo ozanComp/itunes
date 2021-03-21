@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">ITunes</string>
-    <string name="search_hint">Search title, artists or albums</string>
+    <string name="search_hint">Search movies, music, apps, books</string>
 
-    <string name="last_visit">Your last search was:</string>
-    <string name="required">Required!</string>
     <string name="no_network_available">No Network Available</string>
     <string name="no_search_result"> </string>
 
