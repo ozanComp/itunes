@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ITunes</string>
+    <string name="search_hint">Search title, artists or albums</string>
+
+    <string name="last_visit">Your last search was:</string>
+    <string name="required">Required!</string>
+    <string name="no_network_available">No Network Available</string>
+    <string name="no_search_result"> </string>
+
+    <string-array name="category_selection">
+        <item>Movies</item>
+        <item>Music</item>
+        <item>Apps</item>
+        <item>Books</item>
+    </string-array>
+
+    <string-array name="category_selection_keys">
+        <item>movie</item>
+        <item>music</item>
+        <item>software</item>
+        <item>ebook</item>
+    </string-array>
+
+</resources>

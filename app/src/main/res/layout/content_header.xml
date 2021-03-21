@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable name="viewModel"
+            type="com.sol.itunes.viewmodel.TrackListViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:background="@color/colorPrimaryDark">
+
+        <EditText
+            android:id="@+id/editTextTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/search_hint"
+            android:textColor="@color/colorLightBlack"
+            android:text="@{viewModel.searchTerm}"
+            android:textStyle="bold"
+            android:textColorHint="@color/colorLightGray"
+            android:imeOptions="actionSearch"
+            android:padding="@dimen/_5sdp"
+            android:background="@color/colorWhite"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableTint="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"
+            android:importantForAutofill="no" />
+
+        <segmented_control.widget.custom.android.com.segmentedcontrol.SegmentedControl
+            android:id="@+id/segmentedCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            app:columnCount="4"
+            app:textVerticalPadding="@dimen/_5sdp"
+            app:segments="@array/category_selection"
+            app:segmentVerticalMargin="@dimen/_3sdp"
+            android:layoutDirection="ltr"
+            app:radiusForEverySegment="false"
+            app:selectedTextColor="@color/colorLightBlack"
+            app:topLeftRadius="@dimen/_5sdp"
+            app:topRightRadius="@dimen/_5sdp"
+            app:bottomLeftRadius="@dimen/_5sdp"
+            app:bottomRightRadius="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTerm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
