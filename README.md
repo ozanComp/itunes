@@ -1,2 +1,2 @@
 # itunes
-Itunes Search App for Hepsiburada
+Itunes Search App
